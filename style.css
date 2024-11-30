@@ -1,0 +1,113 @@
+/* Estilo general del cuerpo */
+body {
+    font-family: 'Roboto', sans-serif; /* Tipografía moderna */
+    background-image: url('background.jpg'); /* Imagen de fondo */
+    background-size: cover; /* La imagen cubre toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Color del texto principal */
+    line-height: 1.8; /* Mejora la legibilidad */
+}
+
+/* Capa de filtro para mejorar el contraste */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4); /* Filtro translúcido */
+    z-index: -1; /* La capa queda detrás del contenido */
+}
+
+/* Encabezado principal */
+header {
+    text-align: center;
+    padding: 30px 0;
+    background-color: rgba(14, 1, 1, 0.966); /* Oscurece el encabezado para contrastar con el fondo */
+    color: rgba(250, 247, 245, 0.87);
+}
+
+#titulo {
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif; /* Tipografía elegante */
+    margin: 0;
+    color: #fafafa; /* Dorado para contrastar */
+}
+
+#subtitulo {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 0;
+    font-style: italic;
+    color: #fff; /* Blanco suave */
+}
+
+/* Fórmula */
+#formula {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #444;
+    margin: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
+
+/* Artículo */
+#noticia {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco translúcido */
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 20px auto;
+    color: #555;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+    text-align: justify; /* Justifica el texto */
+    font-size: 1rem;
+}
+
+#noticia h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #222;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Enlaces */
+a {
+    color: #417dbd;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #4487cf;
+    text-decoration: underline;
+}
+
+/* Ajustes para pantalla móvil */
+@media (max-width: 768px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    #titulo {
+        font-size: 2rem;
+    }
+
+    #subtitulo {
+        font-size: 1.2rem;
+    }
+
+    #formula {
+        font-size: 1.5rem;
+    }
+
+    #noticia {
+        padding: 20px;
+    }
+}
